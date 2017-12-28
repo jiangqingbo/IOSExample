@@ -19,6 +19,7 @@
 		C3180CC81FA19B4A00775BC9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3180CC71FA19B4A00775BC9 /* FirstViewController.m */; };
 		C3180CCB1FA19B6700775BC9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3180CCA1FA19B6700775BC9 /* SecondViewController.m */; };
 		C3180CCE1FA1CB3200775BC9 /* DefaultInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = C3180CCD1FA1CB3200775BC9 /* DefaultInstance.m */; };
+		C34DCA491FAAC4AE0093BBCB /* NSMutableStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34DCA481FAAC4AE0093BBCB /* NSMutableStringViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		C3180CCA1FA19B6700775BC9 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		C3180CCC1FA1CB3200775BC9 /* DefaultInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultInstance.h; sourceTree = "<group>"; };
 		C3180CCD1FA1CB3200775BC9 /* DefaultInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultInstance.m; sourceTree = "<group>"; };
+		C34DCA471FAAC4AE0093BBCB /* NSMutableStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSMutableStringViewController.h; sourceTree = "<group>"; };
+		C34DCA481FAAC4AE0093BBCB /* NSMutableStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSMutableStringViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		C3180C8F1FA19A1000775BC9 /* IOSExample */ = {
 			isa = PBXGroup;
 			children = (
+				C38EB4091FA1DEAA00B38C67 /* array */,
 				C3180CC51FA19AAF00775BC9 /* PassValue */,
 				C3180C901FA19A1000775BC9 /* AppDelegate.h */,
 				C3180C911FA19A1000775BC9 /* AppDelegate.m */,
@@ -156,6 +160,15 @@
 				C3180CCD1FA1CB3200775BC9 /* DefaultInstance.m */,
 			);
 			path = PassValue;
+			sourceTree = "<group>";
+		};
+		C38EB4091FA1DEAA00B38C67 /* array */ = {
+			isa = PBXGroup;
+			children = (
+				C34DCA471FAAC4AE0093BBCB /* NSMutableStringViewController.h */,
+				C34DCA481FAAC4AE0093BBCB /* NSMutableStringViewController.m */,
+			);
+			path = array;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +307,7 @@
 				C3180CCB1FA19B6700775BC9 /* SecondViewController.m in Sources */,
 				C3180C951FA19A1000775BC9 /* ViewController.m in Sources */,
 				C3180CCE1FA1CB3200775BC9 /* DefaultInstance.m in Sources */,
+				C34DCA491FAAC4AE0093BBCB /* NSMutableStringViewController.m in Sources */,
 				C3180C9B1FA19A1000775BC9 /* IOSExample.xcdatamodeld in Sources */,
 				C3180CC81FA19B4A00775BC9 /* FirstViewController.m in Sources */,
 				C3180CA31FA19A1000775BC9 /* main.m in Sources */,
@@ -460,11 +474,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DU3G9JEUFA;
 				INFOPLIST_FILE = IOSExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huyunit.IOSExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -473,11 +492,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DU3G9JEUFA;
 				INFOPLIST_FILE = IOSExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huyunit.IOSExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
