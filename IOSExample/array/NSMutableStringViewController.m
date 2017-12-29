@@ -82,9 +82,9 @@
         NSString *s = [array1 objectAtIndex:i];
         [mutableString appendString:s];
     }
-    
+
     //
-    
+   
     [self.labelResult setText:mutableString];
 }
 

@@ -19,7 +19,10 @@
 		C3180CC81FA19B4A00775BC9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3180CC71FA19B4A00775BC9 /* FirstViewController.m */; };
 		C3180CCB1FA19B6700775BC9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3180CCA1FA19B6700775BC9 /* SecondViewController.m */; };
 		C3180CCE1FA1CB3200775BC9 /* DefaultInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = C3180CCD1FA1CB3200775BC9 /* DefaultInstance.m */; };
+		C3357DBC1FF4C61D007DCF1C /* HttpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3357DBB1FF4C61D007DCF1C /* HttpViewController.m */; };
 		C34DCA491FAAC4AE0093BBCB /* NSMutableStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34DCA481FAAC4AE0093BBCB /* NSMutableStringViewController.m */; };
+		C38254FC1FF5181200EFE635 /* UIColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C38254FB1FF5181200EFE635 /* UIColorUtils.m */; };
+		C38255181FF6054400EFE635 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = C38255171FF6054400EFE635 /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +66,13 @@
 		C3180CCA1FA19B6700775BC9 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		C3180CCC1FA1CB3200775BC9 /* DefaultInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultInstance.h; sourceTree = "<group>"; };
 		C3180CCD1FA1CB3200775BC9 /* DefaultInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultInstance.m; sourceTree = "<group>"; };
+		C3357DBA1FF4C61D007DCF1C /* HttpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpViewController.h; sourceTree = "<group>"; };
+		C3357DBB1FF4C61D007DCF1C /* HttpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpViewController.m; sourceTree = "<group>"; };
 		C34DCA471FAAC4AE0093BBCB /* NSMutableStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSMutableStringViewController.h; sourceTree = "<group>"; };
 		C34DCA481FAAC4AE0093BBCB /* NSMutableStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSMutableStringViewController.m; sourceTree = "<group>"; };
+		C38254FA1FF5181200EFE635 /* UIColorUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIColorUtils.h; sourceTree = "<group>"; };
+		C38254FB1FF5181200EFE635 /* UIColorUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIColorUtils.m; sourceTree = "<group>"; };
+		C38255171FF6054400EFE635 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,9 @@
 		C3180C8F1FA19A1000775BC9 /* IOSExample */ = {
 			isa = PBXGroup;
 			children = (
+				C38255161FF604E800EFE635 /* images */,
+				C38254F91FF516E200EFE635 /* utils */,
+				C3357DB91FF4C592007DCF1C /* net */,
 				C38EB4091FA1DEAA00B38C67 /* array */,
 				C3180CC51FA19AAF00775BC9 /* PassValue */,
 				C3180C901FA19A1000775BC9 /* AppDelegate.h */,
@@ -160,6 +171,32 @@
 				C3180CCD1FA1CB3200775BC9 /* DefaultInstance.m */,
 			);
 			path = PassValue;
+			sourceTree = "<group>";
+		};
+		C3357DB91FF4C592007DCF1C /* net */ = {
+			isa = PBXGroup;
+			children = (
+				C3357DBA1FF4C61D007DCF1C /* HttpViewController.h */,
+				C3357DBB1FF4C61D007DCF1C /* HttpViewController.m */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		C38254F91FF516E200EFE635 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C38254FA1FF5181200EFE635 /* UIColorUtils.h */,
+				C38254FB1FF5181200EFE635 /* UIColorUtils.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C38255161FF604E800EFE635 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C38255171FF6054400EFE635 /* 1.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		C38EB4091FA1DEAA00B38C67 /* array */ = {
@@ -278,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3180CA01FA19A1000775BC9 /* LaunchScreen.storyboard in Resources */,
+				C38255181FF6054400EFE635 /* 1.png in Resources */,
 				C3180C9D1FA19A1000775BC9 /* Assets.xcassets in Resources */,
 				C3180C981FA19A1000775BC9 /* Main.storyboard in Resources */,
 			);
@@ -306,12 +344,14 @@
 			files = (
 				C3180CCB1FA19B6700775BC9 /* SecondViewController.m in Sources */,
 				C3180C951FA19A1000775BC9 /* ViewController.m in Sources */,
+				C3357DBC1FF4C61D007DCF1C /* HttpViewController.m in Sources */,
 				C3180CCE1FA1CB3200775BC9 /* DefaultInstance.m in Sources */,
 				C34DCA491FAAC4AE0093BBCB /* NSMutableStringViewController.m in Sources */,
 				C3180C9B1FA19A1000775BC9 /* IOSExample.xcdatamodeld in Sources */,
 				C3180CC81FA19B4A00775BC9 /* FirstViewController.m in Sources */,
 				C3180CA31FA19A1000775BC9 /* main.m in Sources */,
 				C3180C921FA19A1000775BC9 /* AppDelegate.m in Sources */,
+				C38254FC1FF5181200EFE635 /* UIColorUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
