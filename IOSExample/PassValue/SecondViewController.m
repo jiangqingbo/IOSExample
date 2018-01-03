@@ -23,11 +23,11 @@
         _textField = [[UITextField alloc]initWithFrame:CGRectMake(100, 100, 200, 40)];
         _textField.textColor = [UIColor blackColor];
         _textField.borderStyle = UITextBorderStyleLine;
-        
+        //属性传值--接受并显示
         _textField.text = self.str;
-        
+        //单例传值--接受并显示
         _textField.text = [DefaultInstance sharedInstance].str;
-        
+        //NSUserDefaults传值--从文件中读取并显示
         _textField.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"NSUserDefaults"];
     }
     return _textField;

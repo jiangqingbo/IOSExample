@@ -56,9 +56,9 @@
     SecondViewController *secondViewController = [[SecondViewController alloc]init];
     secondViewController.str = @"1.属性传值";
     
-    //2、单例传值
+    //2、单例传值--正向传值
     [DefaultInstance sharedInstance].str = @"单例传值";
-    //3、NSUserDefaults传值
+    //3、NSUserDefaults传值--正向传值
     [[NSUserDefaults standardUserDefaults] setObject:@"NSUserDefaults传值" forKey:@"NSUserDefaults"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
@@ -88,6 +88,15 @@
 //代理传值--实现协议方法--接收页面2的值并显示
 -(void)passValue:(NSString *)str{
     self.label.text = str;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    //单例传值--接受页面2反向传值
+//    self.label.text = [DefaultInstance sharedInstance].str;
+    //NSUserDefaults传值--接受页面2反向传值
+//    self.label.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"NSUserDefaultsBack"];
 }
 
 - (void)viewDidLoad {
