@@ -28,9 +28,9 @@
 
 	1. 优先使用iOS自带解析器。
 		1）自带解析器（类方法）	类名：NSJSONSerialization	方法：JSONObjectWithData: option:NSJSONReadingAllowFragments error:
-		2）JSONKit		类名：JSONDecoder			方法：objectWithData:
-		3）TouchJson		类名：CJSONDeserializer	方法：deserialize: error:
-		4）SBJson		类名：SBJsonParser			方法：objectWithData:
+		2）JSONKit		类名：JSONDecoder		方法：objectWithData:
+		3）TouchJson		类名：CJSONDeserializer		方法：deserialize: error:
+		4）SBJson		类名：SBJsonParser		方法：objectWithData:
 		
 	2. 第三方库使用步骤：
 		1）下载并拷贝到工程路径下
@@ -49,8 +49,8 @@
 		REAL				浮点型
 		TEXT				字符串类型，采用UTF-8，UTF-16编码
 		BLOB				大二进制对象类型，能够存放任何二进制数据
-		VARCHAR CHAR CLOB	转成为TEXT类型
-		FLOAT DOUBLE		转换成为REAL		
+		VARCHAR CHAR CLOB		转成为TEXT类型
+		FLOAT DOUBLE			转换成为REAL		
 		NUMERIC				转换成为INTEGER或REAL类型
 		
 		注意：1、没有布尔类型数据，用整数 0 或 1 代替
