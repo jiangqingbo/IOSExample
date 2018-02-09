@@ -12,6 +12,9 @@
 
 +(instancetype)sharedInstance;
 
+//不同的方式创建单例
++(DefaultInstance *)sharedDefault;
+
 @property (nonatomic,strong) NSString *str;
 
 @end

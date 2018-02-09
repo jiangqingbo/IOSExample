@@ -21,4 +21,14 @@
     return instance;
 }
 
+static DefaultInstance *defaultInstance = nil;
+
++(DefaultInstance *)sharedDefault {
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        defaultInstance = [[self alloc] init];
+    });
+    return defaultInstance;
+}
+
 @end
