@@ -55,3 +55,8 @@
 		
 		注意：1、没有布尔类型数据，用整数 0 或 1 代替
 		     2、没有日期、时间类型数据，储存在TEXT 或 REAL类型中，一般用NSNumber或NSString处理。
+		     
+### 6、Swift语言学习开发iOS项目
+
+	git: https://github.com/liuyubobobo/Play-with-Swift-2
+	     https://github.com/JakeLin/LoveFinder		     

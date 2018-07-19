@@ -179,18 +179,29 @@
                                                         id obj = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
                                                         NSLog(@"result = %@", obj);
                                                         
-                                                        if([obj isKindOfClass:[NSDictionary class]]){
-                                                            NSMutableDictionary *datas = [(NSMutableDictionary *)obj objectForKey:@"data"];
-                                                            NSMutableString *mutableString = [[NSMutableString alloc]initWithCapacity:[datas count]];
-                                                            for (id project in datas) {
-                                                                NSString *projectName = [(NSDictionary *)project objectForKey:@"projectName"];
-                                                                [mutableString appendString:projectName];
-                                                                [mutableString appendString:@"\n"];
+                                                        BOOL success = [[obj objectForKey:@"success"] intValue];
+                                                        
+                                                        if(success){
+                                                            if([obj isKindOfClass:[NSDictionary class]]){
+                                                                NSMutableDictionary *datas = [(NSMutableDictionary *)obj objectForKey:@"data"];
+                                                                NSMutableString *mutableString = [[NSMutableString alloc]initWithCapacity:[datas count]];
+                                                                for (id project in datas) {
+                                                                    NSString *projectName = [(NSDictionary *)project objectForKey:@"projectName"];
+                                                                    [mutableString appendString:projectName];
+                                                                    [mutableString appendString:@"\n"];
+                                                                }
+                                                                // 通知主线程刷新，UI更新操作必须在主线程中执行,常嵌套在其他线程中，如下
+                                                                dispatch_async(dispatch_get_main_queue(), ^{
+                                                                    //回调或者说是通知主线程刷新，
+                                                                    [self updateLabelText:mutableString];
+                                                                });
                                                             }
-                                                            // 通知主线程刷新，UI更新操作必须在主线程中执行,常嵌套在其他线程中，如下
+                                                        } else {
+                                                            NSString *message = [obj objectForKey:@"message"];
+                                                            NSLog(@"message = %@", message);
                                                             dispatch_async(dispatch_get_main_queue(), ^{
                                                                 //回调或者说是通知主线程刷新，
-                                                                [self updateLabelText:mutableString];
+                                                                [self updateLabelText:message];
                                                             });
                                                         }
                                                     }

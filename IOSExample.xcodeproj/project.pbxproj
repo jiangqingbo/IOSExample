@@ -23,6 +23,15 @@
 		C34DCA491FAAC4AE0093BBCB /* NSMutableStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34DCA481FAAC4AE0093BBCB /* NSMutableStringViewController.m */; };
 		C38254FC1FF5181200EFE635 /* UIColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C38254FB1FF5181200EFE635 /* UIColorUtils.m */; };
 		C38255181FF6054400EFE635 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = C38255171FF6054400EFE635 /* 1.png */; };
+		C3F4849F20C785A700A0AC3D /* GestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F4849E20C785A700A0AC3D /* GestureRecognizerViewController.m */; };
+		C3F484A520C7CDA200A0AC3D /* ExampleNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F484A420C7CDA200A0AC3D /* ExampleNavigationController.m */; };
+		C3F484A720C7CE4E00A0AC3D /* back_arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F484A620C7CE4E00A0AC3D /* back_arrow_left.png */; };
+		C3F484AB20C7D75B00A0AC3D /* KMGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F484AA20C7D75B00A0AC3D /* KMGestureRecognizer.m */; };
+		C3F484B020C7D97B00A0AC3D /* icon_inspectioning.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F484AC20C7D97A00A0AC3D /* icon_inspectioning.png */; };
+		C3F484B120C7D97B00A0AC3D /* icon_defect.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F484AD20C7D97B00A0AC3D /* icon_defect.png */; };
+		C3F484B220C7D97B00A0AC3D /* icon_end.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F484AE20C7D97B00A0AC3D /* icon_end.png */; };
+		C3F484B320C7D97B00A0AC3D /* icon_start.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F484AF20C7D97B00A0AC3D /* icon_start.png */; };
+		C3F484B520C7DA7F00A0AC3D /* ic_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F484B420C7DA7F00A0AC3D /* ic_bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +82,19 @@
 		C38254FA1FF5181200EFE635 /* UIColorUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIColorUtils.h; sourceTree = "<group>"; };
 		C38254FB1FF5181200EFE635 /* UIColorUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIColorUtils.m; sourceTree = "<group>"; };
 		C38255171FF6054400EFE635 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		C3F4849D20C785A700A0AC3D /* GestureRecognizerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureRecognizerViewController.h; sourceTree = "<group>"; };
+		C3F4849E20C785A700A0AC3D /* GestureRecognizerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizerViewController.m; sourceTree = "<group>"; };
+		C3F484A320C7CDA200A0AC3D /* ExampleNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleNavigationController.h; sourceTree = "<group>"; };
+		C3F484A420C7CDA200A0AC3D /* ExampleNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleNavigationController.m; sourceTree = "<group>"; };
+		C3F484A620C7CE4E00A0AC3D /* back_arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_arrow_left.png; sourceTree = "<group>"; };
+		C3F484A820C7CE8200A0AC3D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C3F484A920C7D75B00A0AC3D /* KMGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMGestureRecognizer.h; sourceTree = "<group>"; };
+		C3F484AA20C7D75B00A0AC3D /* KMGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMGestureRecognizer.m; sourceTree = "<group>"; };
+		C3F484AC20C7D97A00A0AC3D /* icon_inspectioning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_inspectioning.png; sourceTree = "<group>"; };
+		C3F484AD20C7D97B00A0AC3D /* icon_defect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_defect.png; sourceTree = "<group>"; };
+		C3F484AE20C7D97B00A0AC3D /* icon_end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_end.png; sourceTree = "<group>"; };
+		C3F484AF20C7D97B00A0AC3D /* icon_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_start.png; sourceTree = "<group>"; };
+		C3F484B420C7DA7F00A0AC3D /* ic_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_bg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,21 +145,15 @@
 		C3180C8F1FA19A1000775BC9 /* IOSExample */ = {
 			isa = PBXGroup;
 			children = (
-				C38255161FF604E800EFE635 /* images */,
+				C3F484A020C785C600A0AC3D /* mian */,
+				C3F484A220C7CD6200A0AC3D /* navigation */,
+				C3F4849C20C7851700A0AC3D /* drag */,
 				C38254F91FF516E200EFE635 /* utils */,
 				C3357DB91FF4C592007DCF1C /* net */,
 				C38EB4091FA1DEAA00B38C67 /* array */,
 				C3180CC51FA19AAF00775BC9 /* PassValue */,
-				C3180C901FA19A1000775BC9 /* AppDelegate.h */,
-				C3180C911FA19A1000775BC9 /* AppDelegate.m */,
-				C3180C931FA19A1000775BC9 /* ViewController.h */,
-				C3180C941FA19A1000775BC9 /* ViewController.m */,
-				C3180C961FA19A1000775BC9 /* Main.storyboard */,
+				C3F484A120C785D000A0AC3D /* resources */,
 				C3180C9C1FA19A1000775BC9 /* Assets.xcassets */,
-				C3180C9E1FA19A1000775BC9 /* LaunchScreen.storyboard */,
-				C3180CA11FA19A1000775BC9 /* Info.plist */,
-				C3180CA21FA19A1000775BC9 /* main.m */,
-				C3180C991FA19A1000775BC9 /* IOSExample.xcdatamodeld */,
 			);
 			path = IOSExample;
 			sourceTree = "<group>";
@@ -194,6 +210,12 @@
 		C38255161FF604E800EFE635 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C3F484B420C7DA7F00A0AC3D /* ic_bg.png */,
+				C3F484AD20C7D97B00A0AC3D /* icon_defect.png */,
+				C3F484AE20C7D97B00A0AC3D /* icon_end.png */,
+				C3F484AC20C7D97A00A0AC3D /* icon_inspectioning.png */,
+				C3F484AF20C7D97B00A0AC3D /* icon_start.png */,
+				C3F484A620C7CE4E00A0AC3D /* back_arrow_left.png */,
 				C38255171FF6054400EFE635 /* 1.png */,
 			);
 			path = images;
@@ -206,6 +228,51 @@
 				C34DCA481FAAC4AE0093BBCB /* NSMutableStringViewController.m */,
 			);
 			path = array;
+			sourceTree = "<group>";
+		};
+		C3F4849C20C7851700A0AC3D /* drag */ = {
+			isa = PBXGroup;
+			children = (
+				C3F4849D20C785A700A0AC3D /* GestureRecognizerViewController.h */,
+				C3F4849E20C785A700A0AC3D /* GestureRecognizerViewController.m */,
+				C3F484A920C7D75B00A0AC3D /* KMGestureRecognizer.h */,
+				C3F484AA20C7D75B00A0AC3D /* KMGestureRecognizer.m */,
+			);
+			path = drag;
+			sourceTree = "<group>";
+		};
+		C3F484A020C785C600A0AC3D /* mian */ = {
+			isa = PBXGroup;
+			children = (
+				C3180C931FA19A1000775BC9 /* ViewController.h */,
+				C3180C941FA19A1000775BC9 /* ViewController.m */,
+				C3180C901FA19A1000775BC9 /* AppDelegate.h */,
+				C3180C911FA19A1000775BC9 /* AppDelegate.m */,
+				C3180C961FA19A1000775BC9 /* Main.storyboard */,
+				C3180C9E1FA19A1000775BC9 /* LaunchScreen.storyboard */,
+				C3180CA11FA19A1000775BC9 /* Info.plist */,
+				C3180CA21FA19A1000775BC9 /* main.m */,
+				C3180C991FA19A1000775BC9 /* IOSExample.xcdatamodeld */,
+				C3F484A820C7CE8200A0AC3D /* PrefixHeader.pch */,
+			);
+			path = mian;
+			sourceTree = "<group>";
+		};
+		C3F484A120C785D000A0AC3D /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				C38255161FF604E800EFE635 /* images */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		C3F484A220C7CD6200A0AC3D /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C3F484A320C7CDA200A0AC3D /* ExampleNavigationController.h */,
+				C3F484A420C7CDA200A0AC3D /* ExampleNavigationController.m */,
+			);
+			path = navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +337,7 @@
 		C3180C851FA19A1000775BC9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = jiangqingbo;
 				TargetAttributes = {
 					C3180C8C1FA19A1000775BC9 = {
@@ -314,10 +381,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F484B520C7DA7F00A0AC3D /* ic_bg.png in Resources */,
 				C3180CA01FA19A1000775BC9 /* LaunchScreen.storyboard in Resources */,
+				C3F484B320C7D97B00A0AC3D /* icon_start.png in Resources */,
 				C38255181FF6054400EFE635 /* 1.png in Resources */,
+				C3F484A720C7CE4E00A0AC3D /* back_arrow_left.png in Resources */,
 				C3180C9D1FA19A1000775BC9 /* Assets.xcassets in Resources */,
 				C3180C981FA19A1000775BC9 /* Main.storyboard in Resources */,
+				C3F484B120C7D97B00A0AC3D /* icon_defect.png in Resources */,
+				C3F484B220C7D97B00A0AC3D /* icon_end.png in Resources */,
+				C3F484B020C7D97B00A0AC3D /* icon_inspectioning.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +423,11 @@
 				C3180C9B1FA19A1000775BC9 /* IOSExample.xcdatamodeld in Sources */,
 				C3180CC81FA19B4A00775BC9 /* FirstViewController.m in Sources */,
 				C3180CA31FA19A1000775BC9 /* main.m in Sources */,
+				C3F484A520C7CDA200A0AC3D /* ExampleNavigationController.m in Sources */,
+				C3F4849F20C785A700A0AC3D /* GestureRecognizerViewController.m in Sources */,
 				C3180C921FA19A1000775BC9 /* AppDelegate.m in Sources */,
 				C38254FC1FF5181200EFE635 /* UIColorUtils.m in Sources */,
+				C3F484AB20C7D75B00A0AC3D /* KMGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +496,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -427,6 +504,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -475,6 +553,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -482,6 +561,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -518,7 +598,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DU3G9JEUFA;
-				INFOPLIST_FILE = IOSExample/Info.plist;
+				GCC_PREFIX_HEADER = /Users/bobo/xcodeprojects/IOSExample/IOSExample/mian/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/IOSExample/mian/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huyunit.IOSExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -536,10 +617,12 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DU3G9JEUFA;
-				INFOPLIST_FILE = IOSExample/Info.plist;
+				GCC_PREFIX_HEADER = /Users/bobo/xcodeprojects/IOSExample/IOSExample/mian/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/IOSExample/mian/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huyunit.IOSExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

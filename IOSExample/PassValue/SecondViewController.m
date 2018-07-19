@@ -60,7 +60,7 @@
     //6、通知传值--发送通知
     [[NSNotificationCenter defaultCenter] postNotificationName:@"notify" object:nil userInfo:@{@"notifyKey":self.textField.text}];
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad {

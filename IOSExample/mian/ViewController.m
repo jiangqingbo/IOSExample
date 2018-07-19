@@ -11,6 +11,7 @@
 #import "NSMutableStringViewController.h"
 #import "HttpViewController.h"
 #import "UIColorUtils.h"
+#import "GestureRecognizerViewController.h"
 
 #define mScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define mScreenHeight [[UIScreen mainScreen] bounds].size.height
@@ -23,10 +24,26 @@
 @property (nonatomic, strong) UIButton *enterArrayButton;
 //进入学习网络框架请求GET，POST方式
 @property (nonatomic, strong) UIButton *httpButton;
+//进入学习图片拖动功能
+@property (nonatomic, strong) UIButton *dragButton;
 
 @end
 
 @implementation ViewController
+
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+
+- (void) viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
 
 - (UIButton *)addPassValueButtonView {
     if (_passValueButton == nil) {
@@ -78,19 +95,45 @@
     return _httpButton;
 }
 
+- (UIButton *)dragButton {
+    if(!_dragButton){
+        NSInteger indexY = _httpButton.frame.origin.y + _httpButton.frame.size.height;
+        _dragButton = [[UIButton alloc]initWithFrame:CGRectMake(10, indexY + 10, mScreenWidth - 10 * 2, 40)];
+        _dragButton.backgroundColor = [UIColor redColor];
+        _dragButton.layer.cornerRadius = 5;
+        _dragButton.layer.borderWidth = 1.0;
+        _dragButton.layer.borderColor = [UIColorUtils colorWithHexString:@"#C4575B"].CGColor;
+        //点击时高亮
+        _dragButton.showsTouchWhenHighlighted=YES;
+        [_dragButton setTitle:@"学习图片拖动功能" forState:UIControlStateNormal];
+        [_dragButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_dragButton addTarget:self action:@selector(dragListener) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _dragButton;
+}
+
 - (void)passValueClickListener {
     FirstViewController *firstViewController = [[FirstViewController alloc]init];
-    [self presentViewController:firstViewController animated:YES completion:nil];
+    firstViewController.navigationItem.title = @"页面跳转及传值";
+    [self.navigationController pushViewController:firstViewController animated:YES];
 }
 
 - (void)enterArrayClickListener {
     NSMutableStringViewController *nsmutableStringViewController = [[NSMutableStringViewController alloc]init];
-    [self presentViewController:nsmutableStringViewController animated:YES completion:nil];
+    nsmutableStringViewController.navigationItem.title = @"字符串学习";
+    [self.navigationController pushViewController:nsmutableStringViewController animated:YES];
 }
 
 - (void)httpClickListener {
     HttpViewController *httpViewController = [[HttpViewController alloc]init];
-    [self presentViewController:httpViewController animated:YES completion:nil];
+    httpViewController.navigationItem.title = @"学习网络请求";
+    [self.navigationController pushViewController:httpViewController animated:YES];
+}
+
+- (void)dragListener {
+    GestureRecognizerViewController *gestureRecognizerViewController = [[GestureRecognizerViewController alloc]init];
+    gestureRecognizerViewController.navigationItem.title = @"图片拖动";
+    [self.navigationController pushViewController:gestureRecognizerViewController animated:YES];
 }
 
 - (void)viewDidLoad {
@@ -100,6 +143,7 @@
     [self.view addSubview:self.addPassValueButtonView];
     [self.view addSubview:self.addEnterArrayButtonView];
     [self.view addSubview:self.addHttpButtonView];
+    [self.view addSubview:self.dragButton];
 }
 
 

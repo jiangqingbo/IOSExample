@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "ExampleNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    UINavigationController *navigation = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
+//    ExampleNavigationController *navigation = [[ExampleNavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
+    navigation.navigationBar.hidden = YES;
+    self.window.rootViewController = navigation;
+    
     return YES;
+}
+
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 

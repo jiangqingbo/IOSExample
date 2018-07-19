@@ -73,7 +73,8 @@
     //6、通知传值--添加监听观察者模式--等待页面2发出的通知消息
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifyHandle:) name:@"notify" object:nil];
     
-    [self presentViewController:secondViewController animated:YES completion:nil];
+//    [self presentViewController:secondViewController animated:YES completion:nil];
+    [self.navigationController pushViewController:secondViewController animated:YES];
 }
 
 - (void)backClickListener{

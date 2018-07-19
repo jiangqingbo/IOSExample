@@ -82,6 +82,18 @@
         NSString *s = [array1 objectAtIndex:i];
         [mutableString appendString:s];
     }
+    
+    NSMutableArray *tempArr = [NSMutableArray arrayWithArray:array1];
+    for (NSString *s in array1) {
+        NSLog(@"1.s = %@", s);
+        if([s isEqualToString:@"2"]){
+            [tempArr removeObject:s];
+        }
+    }
+    
+    for (NSString *s in tempArr) {
+        NSLog(@"2.s = %@", s);
+    }
 
     //
    
